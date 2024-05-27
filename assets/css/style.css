@@ -8190,7 +8190,7 @@ button.bg-gray:focus {
   background-color: #545b62 !important; }
 
 .bg-gray-dark {
-  background-color: #101010 !important; }
+  background-color: #272727 !important; }
 
 a.bg-gray-dark:hover, a.bg-gray-dark:focus,
 button.bg-gray-dark:hover,
@@ -9013,8 +9013,7 @@ body {
 .row .row:not(:last-child) {
   margin-bottom: 1.875rem; }
 
-.hero {
-  padding-top: 2rem; }
+.hero { }
   .hero[class*="-small"] {
     padding-top: 8.75rem;
     padding-bottom: 3.75rem; }
