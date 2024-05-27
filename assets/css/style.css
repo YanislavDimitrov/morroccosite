@@ -1676,10 +1676,9 @@ textarea.form-control {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.9375rem 1.875rem;
+  padding: 0.8rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .btn {
@@ -2064,10 +2063,8 @@ fieldset:disabled a.btn {
     pointer-events: none; }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 1.0625rem 2.125rem;
   font-size: 0.875rem;
-  line-height: 1.5;
-  border-radius: 0; }
+  line-height: 1.5; }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.625rem 1.25rem;
@@ -13698,11 +13695,10 @@ img {
   height: calc(1.5em + 2.125rem);
   line-height: calc(1.5em + 2.125rem);
   text-align: center;
-  background: #4F944F;
+  background: var(--gray);
   border-radius: 50%;
   font-size: 0.875rem;
   font-weight: 600;
-  text-transform: uppercase;
   color: #fff;
   z-index: 10; }
 
@@ -14076,9 +14072,9 @@ img {
   width: 6.25rem; }
   .product .owl-carousel .owl-nav button.owl-prev,
   .product .owl-carousel .owl-nav button.owl-next {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
     transition-delay: 0s;
@@ -14088,8 +14084,8 @@ img {
     float: left;
     margin-top: 0;
     text-align: center;
-    background: #dddddd;
-    border-radius: 0;
+    background: transparent;
+    border-radius: 100%;
     z-index: 20; }
     .product .owl-carousel .owl-nav button.owl-prev::before,
     .product .owl-carousel .owl-nav button.owl-next::before {
