@@ -299,7 +299,7 @@
 
 
       // timer
-      $('#timer').countdown('2020/01/01', function(event) {
+      $('#timer').countdown('2024/07/01', function(event) {
           var $this = $(this).html(event.strftime(''
               + '<div>%D <span>days</span></div> '
               + '<div>%H <span>hours</span></div> '
