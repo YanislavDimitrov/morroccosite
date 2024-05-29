@@ -5280,6 +5280,12 @@ button.bg-dark:focus {
 .min-vh-100 {
   min-height: 100vh !important; }
 
+.min-vh-70 {
+  min-height: 70vh !important; }
+
+.min-vh-30 {
+  min-height: 30vh !important; }
+
 .vw-100 {
   width: 100vw !important; }
 
@@ -13069,7 +13075,7 @@ aside .btn-group-square .btn {
       opacity: .5; }
   @media (max-width: 767.98px) {
     .timer {
-      display: block;
+      display: flex;
       overflow: hidden; }
       .timer > * {
         display: block;
