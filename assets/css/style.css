@@ -1336,7 +1336,7 @@ pre {
   .form-control:focus {
     color: #495057;
     background-color: transparent;
-    border-color: #4F944F;
+    border-color: #414141;
     outline: 0;
     box-shadow: 0 0 0 0 rgba(79, 148, 79, 0.25); }
   .form-control::placeholder {
@@ -1405,7 +1405,50 @@ select.form-control[size], select.form-control[multiple] {
   height: auto; }
 
 textarea.form-control {
-  height: auto; }
+  height: 10rem;
+  resize: none
+}
+
+.intro:hover .triangle {
+  opacity: 1;
+  transform: scale(1.2); /* Scale transformation */
+}
+
+.intro .triangle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 50;
+  margin-left: -11px;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 16px solid white;
+  opacity: 0.65;
+  -webkit-transition-property: bottom, opacity;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition-property: bottom, opacity;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-delay: 0s;
+  -ms-transition-property: bottom, opacity;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-timing-function: ease-out;
+  -ms-transition-delay: 0s;
+  -o-transition-property: bottom, opacity;
+  -o-transition-duration: 0.2s;
+  -o-transition-timing-function: ease-out;
+  -o-transition-delay: 0s;
+  transition-property: bottom, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease
+}
 
 .form-group {
   margin-bottom: 1rem; }
@@ -12140,13 +12183,14 @@ ul, ol {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   transform: scale(1.1);
-  filter: saturate(.8); }
+  filter: brightness(80%); }
 
 .card[class*="-scale"]:hover .image {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   transform: scale(1); 
-  filter: saturate(1);}
+  filter: saturate(1);
+  filter: brightness(100%);}
 
 .card[class*="-highlight"] {
   -webkit-transition: all 0.2s;
@@ -13548,7 +13592,7 @@ img {
   bottom: 0;
   left: 0;
   background-size: cover;
-  background-position: bottom; }
+  background-position: center; }
   .image::after {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -14460,6 +14504,21 @@ img {
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   transition-delay: 0s; }
+
+@keyframes moveBackground {
+  0% {
+    background-position: top;
+  }
+  66% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+.moveBackground {
+  animation: moveBackground 25s linear; /* Adjust duration and timing function as needed */}
 
 .swiper-slide-active .image-zoom {
   -webkit-transform: scale(1);
