@@ -55,6 +55,26 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+.owl-carousel.owl-drag .owl-item * {
+  transition: transform .8s ease, filter .8s ease; /* Apply transition to both transform and filter */
+}
+
+.owl-carousel.owl-drag .owl-item:not(.active) * {
+  filter: blur(1.2px);
+  transform: scale(0.7); /* Apply scale transformation */
+
+}
+/*.owl-carousel.owl-drag .owl-item{*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+.owl-carousel.owl-drag .owl-item.active * {
+  filter: none; /* Ensure no blur for active items */
+  transform: scale(1); /* Reset scale for active items */
+
+}
+
+
 body {
   margin: 0;
   font-family: "century-gothic", sans-serif;
@@ -13528,7 +13548,7 @@ img {
   bottom: 0;
   left: 0;
   background-size: cover;
-  background-position: center; }
+  background-position: bottom; }
   .image::after {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -14099,9 +14119,10 @@ img {
     .product .owl-carousel .owl-nav button.owl-prev:hover,
     .product .owl-carousel .owl-nav button.owl-next:hover {
       background: rgb(196, 196, 196 , 0.2);}
-.product .owl-carousel .owl-nav button.owl-prev:focus,
-.product .owl-carousel .owl-nav button.owl-next:focus {
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
   outline: none;}
+
   .product .owl-carousel .owl-nav button.owl-prev {
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
