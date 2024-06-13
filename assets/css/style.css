@@ -4832,6 +4832,9 @@ button.bg-dark:focus {
 .justify-content-end {
   justify-content: flex-end !important; }
 
+.justify-content-even{
+  justify-content: space-evenly !important; }
+
 .justify-content-center {
   justify-content: center !important; }
 
