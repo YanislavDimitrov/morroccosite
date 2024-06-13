@@ -169,6 +169,8 @@ strong {
 small {
   font-size: 80%; }
 
+
+
 sub,
 sup {
   position: relative;
@@ -409,6 +411,11 @@ small,
 .small {
   font-size: 80%;
   font-weight: 400; }
+
+big,
+.big {
+  font-size: 300%;
+  font-weight: 600; }
 
 mark,
 .mark {
