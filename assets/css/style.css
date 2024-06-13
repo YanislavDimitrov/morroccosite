@@ -39,6 +39,32 @@
 *::before,
 *::after {
   box-sizing: border-box; }
+.message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.success {
+  color: #fff;
+  background-color: #4F944F;
+  border-color: #4F944F;
+}
+
+#loading-icon{
+  display: none;
+}
+
+.error {
+  color: #fff;
+  background-color: #944f4f;
+  border-color: #944f4f;
+}
 
 .logo-img{
   max-width: 90%;
@@ -2185,6 +2211,11 @@ input[type="button"].btn-block {
     border-left: 0.3em solid transparent; }
   .dropdown-toggle:empty::after {
     margin-left: 0; }
+
+.required::after {
+  content: " *";
+  color: red;
+}
 
 .dropdown-menu {
   position: absolute;
