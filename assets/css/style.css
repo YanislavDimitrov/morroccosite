@@ -9103,10 +9103,6 @@ a.text-rss:hover, a.text-rss:focus {
     height: 100vh;
     min-height: 100vh; } }
 
-@media (max-width: 1199.98px) {
-  [class*="vh-"] {
-    height: 100vh !important; } }
-
 body {
   position: relative;
   -webkit-font-smoothing: antialiased;
