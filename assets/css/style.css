@@ -9105,7 +9105,7 @@ a.text-rss:hover, a.text-rss:focus {
 
 @media (max-width: 1199.98px) {
   [class*="vh-"] {
-    height: auto !important; } }
+    height: 100vh !important; } }
 
 body {
   position: relative;
